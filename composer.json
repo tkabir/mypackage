@@ -1,0 +1,20 @@
+{
+    "name": "tkabir/some-package",
+    "description": "Sample basic package",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel"],
+    "authors": [
+        {
+            "name": "Tanzir Kabir",
+            "email": "mtkabir285@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Tkabir\\Somepackage\\": "src/"
+        }
+    }
+}
