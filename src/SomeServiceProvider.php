@@ -40,12 +40,11 @@ class SomeServiceProvider extends ServiceProvider
             return new Somepackage;
         });
 
-<<<<<<< HEAD
-        //publish the view to the main app
-=======
->>>>>>> 138ecdac0cdf1d7bcadc08447b8be0ef867f1937
+        //publish the view to main
         $this->publishes([
             __DIR__.'/Views' => resource_path('views/vendor/somepackage'),
         ]);
+
+
     }
 }
