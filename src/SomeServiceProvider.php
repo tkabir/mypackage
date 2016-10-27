@@ -39,5 +39,10 @@ class SomeServiceProvider extends ServiceProvider
         $this->app['somepackage'] = $this->app->share(function($app) {
             return new Somepackage;
         });
+        
+        //publish the view to the app
+        $this->publishes([
+            __DIR__.'/Views' => resource_path('views/vendor/somepackage'),
+        ]);
     }
 }
